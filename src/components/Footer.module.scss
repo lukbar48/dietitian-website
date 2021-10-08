@@ -1,0 +1,87 @@
+@import '../abstracts/colors.scss';
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  border-top: 1px gainsboro solid;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+
+.logo {
+  height: 80px;
+}
+
+.info {
+  color: rgb(51, 51, 51);
+  font-size: 1rem;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+}
+
+.linksList {
+  &Item {
+    display: inline-block;
+    padding: 7px 15px;
+    list-style-type: none;
+  }
+
+  &Item a {
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+    font-size: 1rem;
+  }
+  &Item a:hover {
+    text-decoration: underline;
+  }
+}
+
+.socials {
+  display: flex;
+  list-style-type: none;
+
+  &Item {
+    margin: 0 10px;
+    background-color: rgb(236, 236, 236);
+    border-radius: 50%;
+  }
+  &Item a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease 0s;
+    color: rgb(51, 51, 51);
+    font-size: 1.5rem;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+  }
+
+  &Item a:hover {
+    color: white;
+    background-color: $base-blue;
+  }
+}
+
+.activeMiniNavLink {
+  text-decoration: underline !important;
+}
+
+@media screen and (max-width: 800px) {
+  .footer {
+    flex-direction: column;
+    gap: 5px
+  }
+
+  .linksList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}

@@ -1,0 +1,142 @@
+@import '../abstracts/colors.scss';
+
+.center {
+  width: 100vw;
+  // position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 4%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 100px;
+  cursor: pointer;
+}
+
+.mobileNav {
+  display: none;
+  margin-left: 20px;
+  font-size: 2rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transform: translateY(3px);
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  height: auto;
+  transition: all 0.3s linear;
+}
+
+.linksList {
+  display: flex;
+  align-items: center;
+}
+
+.links li {
+  display: inline-block;
+  padding: 0 20px;
+  list-style-type: none;
+}
+.links li a {
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+  color: rgb(51, 51, 51);
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.links li a:hover {
+  color: $base-orange;
+}
+.shoppingCart {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  color: $base-black;
+  font-size: 2rem;
+  width: 55px;
+  height: 55px;
+  margin-right: 20px;
+}
+
+.miniWidgets {
+  display: flex;
+  list-style-type: none;
+}
+
+.miniWidgets li {
+  display: inline-block;
+  margin: 0 10px;
+  background-color: rgb(236, 236, 236);
+  border-radius: 50%;
+}
+.miniWidgets li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+  color: rgb(51, 51, 51);
+  font-size: 1.6rem;
+  font-weight: 500;
+  width: 55px;
+  height: 55px;
+}
+.miniWidgets li a:hover {
+  color: white;
+}
+.miniWidgets li:hover {
+  background-color: $base-blue;
+}
+
+.miniWidgetsActive {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.activeNavLink {
+  color: $base-orange !important;
+}
+
+@media screen and (max-width: 1200px) {
+  .center {
+    display: block;
+  }
+
+  .links {
+    display: block;
+    height: 0;
+    overflow: hidden;
+  }
+
+  .linksList {
+    flex-direction: column;
+  }
+
+  .links li {
+    padding: 15px 0;
+  }
+
+  .mobileNav {
+    display: inline-block;
+  }
+
+  .miniWidgets {
+    display: none;
+  }
+}
+
