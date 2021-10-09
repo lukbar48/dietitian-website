@@ -23,6 +23,8 @@ const OMnie = () => {
               quidem commodi aut ducimus! Quibusdam ad totam fugit, consequatur doloribus sed quia
               vel numquam eius illum ipsum id. Cum ullam accusantium et esse excepturi?
             </p>
+      <br></br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis modi soluta aliquid expedita cumque perferendis ipsa deserunt? Aspernatur cum repellat illum iste perspiciatis qui nesciunt? Blanditiis dicta omnis ipsum deleniti, ea qui aperiam soluta a accusamus laboriosam quaerat. Exercitationem, ipsa.</p>
           </div>
           <div className={styles.image}></div>
         </div>

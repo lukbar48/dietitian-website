@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 50px 7%;
+  padding: 50px 7% 0;
   background-color: #F6F6F6;
 }
 
@@ -10,11 +10,19 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .image {
+  // background: url("../assets/images/man.png") no-repeat center center fixed;
+  width: 500px;
+  height: 800px;
   background-image: url(../assets/images/man.png);
   background-position: bottom center;
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size:550px auto;
+}
+
+.text {
+  width: 45%;
 }
