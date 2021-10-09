@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from 'styled-components'
 import styles from './OMnie.module.scss';
 import manImage from '../assets/images/man.png';
 import TitleHeader from '../components/TitleHeader';

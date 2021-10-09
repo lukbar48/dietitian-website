@@ -10,6 +10,8 @@ import Przepisy from './pages/Przepisy';
 import Blog from './pages/Blog';
 import Kontakt from './pages/Kontakt';
 import Koszyk from './pages/Koszyk';
+import Regulamin from './pages/Regulamin';
+import Polityka from './pages/Polityka';
 import Footer from './components/Footer';
 
 function App() {
@@ -26,6 +28,8 @@ function App() {
           <Route path="/blog" component={Blog} />
           <Route path="/kontakt" component={Kontakt} />
           <Route path="/koszyk" component={Koszyk} />
+          <Route path="/regulamin" component={Regulamin} />
+          <Route path="/polityka-prywatnosci" component={Polityka} />
         </Switch>
         <Footer />
       </div>
