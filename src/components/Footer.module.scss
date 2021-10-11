@@ -11,12 +11,12 @@
 }
 
 .logo {
-  height: 80px;
+  height: 60px;
 }
 
 .info {
   color: rgb(51, 51, 51);
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 .links {
@@ -34,7 +34,7 @@
   &Item a {
     text-decoration: none;
     color: rgb(51, 51, 51);
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   &Item a:hover {
     text-decoration: underline;
@@ -56,10 +56,10 @@
     align-items: center;
     transition: all 0.3s ease 0s;
     color: rgb(51, 51, 51);
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     border-radius: 50%;
-    width: 45px;
-    height: 45px;
+    width: 35px;
+    height: 35px;
   }
 
   &Item a:hover {
