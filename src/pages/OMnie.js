@@ -11,7 +11,7 @@ const OMnie = () => {
       <div className={styles.wrapper}>
         <div className={styles.about}>
           <div className={styles.text}>
-            <h2>Miło mi, że tu jesteś!</h2>
+            <h2>Miło mi, że tu jesteś!</h2> 
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo labore, eos distinctio,
               dolorum sed deserunt, laborum illum delectus cupiditate asperiores autem nisi dicta
@@ -31,8 +31,10 @@ const OMnie = () => {
               soluta a accusamus laboriosam quaerat. Exercitationem, ipsa.
             </p>
           </div>
-          <div className={styles.image}></div>
+          <div className={styles.image}>
+          </div>
         </div>
+
       </div>
     </>
   );
