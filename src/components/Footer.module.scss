@@ -1,5 +1,5 @@
 @import '../abstracts/colors.scss';
-
+ 
 .footer {
   display: flex;
   justify-content: space-between;
@@ -46,7 +46,7 @@
   list-style-type: none;
 
   &Item {
-    margin: 0 10px;
+    margin: 0 10px 10px;
     background-color: rgb(236, 236, 236);
     border-radius: 50%;
   }

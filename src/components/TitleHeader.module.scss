@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 140px 10px 60px 10px;
+  padding: 130px 10px 50px 10px;
 }
 
 .title {
@@ -21,4 +21,17 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
+}
+
+@media (max-width: 800px) {
+  .wrapper {
+    padding: 110px 10px 30px 10px;
+  }
+  .title {
+    font-size: 2rem;
+  }
+
+  .underline {
+    width: 4rem;
+  }
 }
