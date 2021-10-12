@@ -1,23 +1,24 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import styles from './App.module.scss';
-import NavBar from './components/NavBar';
-import Home from './pages/Home';
-import OMnie from './pages/OMnie';
-import Oferta from './pages/Oferta';
-import Sklep from './pages/Sklep';
-import Przepisy from './pages/Przepisy';
-import Blog from './pages/Blog';
-import Kontakt from './pages/Kontakt';
-import Koszyk from './pages/Koszyk';
-import Regulamin from './pages/Regulamin';
-import Polityka from './pages/Polityka';
-import Footer from './components/Footer';
+import GlobalStyle from 'theme/GlobalStyle';
+import NavBar from 'components/NavBar';
+import Home from 'pages/Home';
+import OMnie from 'pages/OMnie';
+import Oferta from 'pages/Oferta';
+import Sklep from 'pages/Sklep';
+import Przepisy from 'pages/Przepisy';
+import Blog from 'pages/Blog';
+import Kontakt from 'pages/Kontakt';
+import Koszyk from 'pages/Koszyk';
+import Regulamin from 'pages/Regulamin';
+import Polityka from 'pages/Polityka';
+import Footer from 'components/Footer';
 
 function App() {
   return (
     <Router>
-      <div className={styles.App}>
+      <GlobalStyle/>
+      <div className='App'>
         <NavBar />
         <Switch>
           <Route exact path="/" component={Home} />

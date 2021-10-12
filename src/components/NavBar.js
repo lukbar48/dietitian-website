@@ -2,8 +2,8 @@ import React, { useState, useRef, useEffect } from 'react';
 import { BrowserRouter as Router, Switch, Route, NavLink } from 'react-router-dom';
 import { FaBars } from 'react-icons/fa';
 import { RiShoppingCart2Line as ShoppingCart } from 'react-icons/ri';
-import { links, socials } from '../data';
-import logo from '../assets/images/zywienienatak.jpg';
+import logo from 'assets/images/zywienienatak.jpg';
+import { links, socials } from 'data';
 import styles from './NavBar.module.scss';
 
 const NavBar = () => {

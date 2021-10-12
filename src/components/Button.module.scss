@@ -1,0 +1,24 @@
+@import '../abstracts/colors.scss';
+
+.buttonContainer {
+  margin-top: 38px;
+  margin-bottom: 60px;
+}
+
+.button {
+  background-color: $base-orange;
+  padding: 13px 50px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  color: white;
+  font-weight: 500;
+  font-size: 1rem;
+  box-shadow: 0 12px 24px 0 rgb(212, 212, 212);
+  margin: 10px 0;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}

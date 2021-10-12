@@ -4,7 +4,7 @@ import TitleHeader from '../components/TitleHeader';
 const Polityka = () => {
   
   return (
-    <TitleHeader>Polityka</TitleHeader>
+    <TitleHeader>Polityka prywatności</TitleHeader>
   )
 }
 

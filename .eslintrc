@@ -15,5 +15,19 @@
     "react/prop-types": "off",
     "no-alert": "off",
     "no-else-return": "off"
+    // "import/no-unresolved": 1
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["./src"],
+        "extensions": [
+          ".js",
+          ".jsx",
+          ".ts",
+          ".tsx"
+        ]
+      }
+    }
   }
 }

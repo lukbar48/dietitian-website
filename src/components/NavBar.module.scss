@@ -1,8 +1,9 @@
 @import '../abstracts/colors.scss';
 
 .center {
+  z-index: 1000;
   width: 100vw;
-  // position: fixed;
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -10,6 +11,7 @@
   padding: 0 4%;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   background-color: white;
+  overflow: hidden;
 }
 
 .header {
@@ -19,7 +21,7 @@
 }
 
 .logo {
-  height: 90px;
+  height: 80px;
   cursor: pointer;
 }
 

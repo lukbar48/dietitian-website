@@ -1,9 +1,12 @@
+@import '../abstracts/colors.scss';
+
+
 .wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 50px 7% 0;
-  background-color: #F6F6F6;
+  background-color: $base-grey;
 }
 
 .about {
