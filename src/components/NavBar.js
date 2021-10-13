@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route, NavLink } from 'react-router-do
 import { FaBars } from 'react-icons/fa';
 import { RiShoppingCart2Line as ShoppingCart } from 'react-icons/ri';
 import logo from 'assets/images/zywienienatak.jpg';
-import { links, socials } from 'data';
+import { links, socials } from 'data/data';
 import styles from './NavBar.module.scss';
 
 const NavBar = () => {
@@ -40,7 +40,7 @@ const NavBar = () => {
                 const { id, url, text } = link;
                 return (
                   <li key={id}>
-                    <NavLink exact activeClassName={styles.activeNavLink} to={url}>
+                    <NavLink exact activeClassName={styles.activeNavLink} onClick={() => setShowSidebar(false)} to={url}>
                       {text}
                     </NavLink>
                   </li>

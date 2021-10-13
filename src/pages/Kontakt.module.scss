@@ -1,0 +1,34 @@
+@import '../abstracts/colors.scss';
+
+.wrapper {
+  margin: 0 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  // width: 95vw;
+}
+
+.formContainer {
+  flex: 0 0 48%;
+}
+
+.imageContainer {
+  flex: 0 0 48%;
+
+  .image {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 850px) {
+  .wrapper {
+    flex-wrap: wrap;
+  }
+  .formContainer {
+    flex: 0 0 100%;
+  }
+
+  .imageContainer {
+    flex: 0 0 100%;
+  }
+}

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Switch, Route, NavLink } from 'react-router-dom';
-import { miniNavLinks, socials } from '../data';
+import { miniNavLinks, socials } from '../data/data';
 import logo from '../assets/images/zywienienatak.jpg';
 import styles from './Footer.module.scss';
 

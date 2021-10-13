@@ -28,11 +28,14 @@
 }
 
 .aboutText {
-  flex: 0 0 50%;
+  flex: 0 0 45%;
 
   h2 {
     padding: 20px 0;
     font-size: 2rem;
+  }
+  p {
+    color: $base-font;
   }
 }
 
@@ -40,8 +43,13 @@
 
 .offer {
   width: 100vw;
-  padding: 60px 5%;
+  padding: 60px 5% 20px;
   background-color: white;
+
+  p {
+    color: $base-font;
+
+  }
 }
 
 .sport {
@@ -109,13 +117,13 @@
 }
 
 @media (max-width: 800px) {
-  .image {
+  .aboutImage {
     flex: 0 0 100%;
     height: 420px;
     background-size: 300px auto;
   }
 
-  .text {
+  .aboutText {
     flex: 0 0 100%;
   }
 
@@ -127,8 +135,8 @@
       max-width: 100%;
     }
     &Image img {
-      flex: 0 0 90%;
-      max-width: 60%;
+      flex: 0 0 100%;
+      max-width: 80%;
       border-radius: 10px;
     }
   }
@@ -137,12 +145,12 @@
     flex-flow: column-reverse wrap;
 
     &Text {
-      flex: 0 0 90%;
+      flex: 0 0 100%;
       max-width: 100%;
     }
     &Image img {
       flex: 0 0 100%;
-      max-width: 60%;
+      max-width: 80%;
       border-radius: 10px;
     }
   }

@@ -20,7 +20,9 @@ const OMnie = () => {
               dolorum sed deserunt, laborum illum delectus cupiditate asperiores autem nisi dicta
               iste aliquid molestias numquam deleniti eveniet? Aspernatur sit ipsum, ratione dolorum
               corrupti architecto illo expedita odio quam eaque obcaecati error at distinctio
-              recusandae eligendi magni deserunt sapiente. Sapiente ratione fugiat aperiam unde!
+              recusandae eligendi magni deserunt sapiente.
+              <br></br>
+              Sapiente ratione fugiat aperiam unde!
               Voluptatem numquam distinctio harum inventore reiciendis odit illum, quam, vel
               commodi, expedita recusandae. Quasi consectetur modi minima quos recusandae a nihil
               quidem commodi aut ducimus! Quibusdam ad totam fugit, consequatur doloribus sed quia
@@ -76,6 +78,8 @@ const OMnie = () => {
                 <br></br>
                 Odit iure nihil voluptas debitis? Totam illo hic quasi aliquam repudiandae sapiente
                 mollitia alias, amet dolore modi nostrum molestiae dolores dignissimos quam.
+                <br></br>
+                Quod assumenda vitae nisi! Quas dolor inventore sequi officia nisi. Quidem incidunt, fugit exercitationem modi voluptatum unde deserunt minima atque, saepe molestias doloribus, quisquam eaque officia ad enim beatae rem eos in illum.
               </p>
             </div>
           </div>
