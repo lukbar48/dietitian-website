@@ -14,8 +14,9 @@
     "arrow-body-style": 0,
     "react/prop-types": "off",
     "no-alert": "off",
-    "no-else-return": "off"
-    // "import/no-unresolved": 1
+    "no-else-return": "off",
+    "global-require": "off",
+    "import/no-dynamic-require": "off"
   },
   "settings": {
     "import/resolver": {

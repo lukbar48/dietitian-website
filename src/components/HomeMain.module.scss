@@ -54,6 +54,10 @@
     font-size: 2rem;
     line-height: 46px;
     text-align: center;
+
+    &Small {
+      text-align: center;
+    }
   }
   .headerImageContainer {
     flex: 0 0 90%;

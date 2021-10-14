@@ -1,2 +1,132 @@
 @import '../abstracts/colors.scss';
 
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: $base-grey;
+  padding-top: 50px;
+}
+
+.header {
+  h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+}
+
+.sliderContainer {
+  width: 960px;
+  height: 500px;
+  position: relative;
+  // overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  width: 3000px;
+  height: 100%;
+  // transform: translateX(-320px);
+}
+
+.person {
+  position: absolute;
+  display: flex;
+  // justify-content: space-between;
+  // align-items: center;
+  flex-direction: column;
+  width: 300px;
+  height: 480px;
+  margin: 10px;
+  // border: 1px solid black;
+  background-color: white;
+}
+
+.description {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 10px;
+
+  h5 {
+    padding-bottom: 6px;
+    font-size: 1.2rem;
+  }
+
+  p {
+    margin-bottom: auto;
+    font-size: 0.9rem;
+    color: $base-font;
+  }
+
+  .scale {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    padding-top: 6px;
+    color: $base-orange;
+
+    h6 {
+      color: black;
+      font-size: 1.2rem;
+      padding-left: 5px;
+    }
+  }
+}
+
+.image {
+  width: 100%;
+  align-self: flex-start;
+}
+
+.buttonLeft,
+.buttonRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 45%;
+  font-size: 4rem;
+  background-color: $base-orange;
+  color: white;
+  border: none;
+  width: 40px;
+  height: 60px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.buttonLeft {
+}
+.buttonRight {
+  right: 0;
+}
+
+.buttonLeft:hover,
+.buttonRight:hover {
+  opacity: 0.9;
+}
+
+.beforeLeftSlide {
+  opacity: 0;
+  transform: translateX(-200%);
+}
+.leftSlide {
+  opacity: 1;
+  transform: translateX(-100%);
+}
+.middleSlide {
+  opacity: 1;
+  transform: translateX(0);
+}
+.rightSlide {
+  opacity: 1;
+  transform: translateX(100%);
+}
+.afterRightSlide {
+  opacity: 0;
+  transform: translateX(200%);
+}

@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <>
       <HomeMain />
-      {/* <Metamorfozy /> */}
+      <Metamorfozy />
     </>
   )
 }
