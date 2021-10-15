@@ -2,10 +2,8 @@ import React from 'react';
 import { CgFileDocument, CgGym } from 'react-icons/cg';
 import { BiMessageRounded } from 'react-icons/bi';
 import { GiSmartphone, GiForkKnifeSpoon } from 'react-icons/gi';
-import { BsLightning } from "react-icons/bs";
-
-
-
+import { BsLightning } from 'react-icons/bs';
+import OfferBox from 'components/OfferBox';
 import TitleHeader from '../components/TitleHeader';
 import styles from './Oferta.module.scss';
 
@@ -107,6 +105,7 @@ const Oferta = () => {
           </div>
         </div>
       </div>
+      <OfferBox/>
     </>
   );
 };
