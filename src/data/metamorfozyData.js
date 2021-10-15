@@ -25,7 +25,7 @@ const people = [
   },
   {
     image: 'meta5.jpg',
-    name: 'Marcin',
+    name: 'Mariola',
     kg: '-9kg',
     text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, aliquid ipsa incidunt voluptate illum sit!',
   },

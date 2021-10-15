@@ -4,11 +4,9 @@ import classnames from 'classnames';
 import { FiChevronRight, FiChevronLeft } from 'react-icons/fi';
 import { IoScale } from 'react-icons/io5';
 import { FaQuoteRight } from 'react-icons/fa';
-import MetaItem from './MetaItem';
 import styles from './Metamorfozy.module.scss';
 
 const Metamorfozy = () => {
-  const [index, setIndex] = useState(0);
 
   return (
     <div className={styles.wrapper}>
