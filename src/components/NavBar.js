@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { BrowserRouter as Router, Switch, Route, NavLink } from 'react-router-dom';
 import { FaBars } from 'react-icons/fa';
 import { RiShoppingCart2Line as ShoppingCart } from 'react-icons/ri';
+import { IoPersonOutline } from "react-icons/io5";
 import logo from 'assets/images/zywienienatak.jpg';
 import { links, socials } from 'data/data';
 import styles from './NavBar.module.scss';
@@ -57,6 +58,9 @@ const NavBar = () => {
           >
             <NavLink className={styles.shoppingCart} to="/koszyk">
               <ShoppingCart />{' '}
+            </NavLink>
+            <NavLink className={styles.login} to="/login">
+              <IoPersonOutline /><p>Zaloguj</p>
             </NavLink>
             {socials.map((social) => {
               const { id, url, icon } = social;

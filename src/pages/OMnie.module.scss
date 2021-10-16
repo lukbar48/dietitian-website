@@ -60,6 +60,7 @@
   &Text {
     flex: 0 0 50%;
     max-width: 50%;
+    color: $base-orange;
 
     h3 {
       padding: 20px 0;
@@ -91,6 +92,7 @@
   &Text {
     flex: 0 0 50%;
     max-width: 50%;
+    color: $base-orange;
 
     h3 {
       padding: 20px 0;
@@ -110,7 +112,7 @@
     border-radius: 10px;
   }
 }
-
+ 
 .offerButton {
   display: grid;
   place-items: center;

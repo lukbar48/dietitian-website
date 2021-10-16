@@ -9,11 +9,6 @@ const ContactForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const message = {
-      name,
-      email,
-      content,
-    };
   }
 
   return (
