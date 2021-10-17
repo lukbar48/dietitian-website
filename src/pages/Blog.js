@@ -7,14 +7,15 @@ import styles from './Blog.module.scss';
 
 const Blog = () => {
   const [openForm, setOpenForm] = useState(false)
+  const [blogsCategory, setBlogsCategory] = useState('')
 
   return (
     <>
       <TitleHeader>Blog</TitleHeader>
       <div className={styles.wrapper}>
         <div className={styles.blog}>
-          <BlogCategories setOpenForm={setOpenForm} />
-          <BlogPosts />
+          <BlogCategories setBlogsCategory={setBlogsCategory} setOpenForm={setOpenForm} />
+          <BlogPosts blogsCategory={blogsCategory} />
           {openForm ? <AddBlogForm setOpenForm={setOpenForm} /> : null}
         </div>
       </div>

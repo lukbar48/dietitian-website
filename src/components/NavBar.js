@@ -56,10 +56,10 @@ const NavBar = () => {
                 : `${styles.miniWidgets}`
             }
           >
-            <NavLink className={styles.shoppingCart} to="/koszyk">
+            <NavLink onClick={() => setShowSidebar(!showSidebar)} className={styles.shoppingCart} to="/koszyk">
               <ShoppingCart />{' '}
             </NavLink>
-            <NavLink className={styles.login} to="/login">
+            <NavLink onClick={() => setShowSidebar(!showSidebar)} className={styles.login} to="/login">
               <IoPersonOutline /><p>Zaloguj</p>
             </NavLink>
             {socials.map((social) => {
