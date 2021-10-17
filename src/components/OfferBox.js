@@ -29,7 +29,7 @@ const OfferBox = () => {
             </ul>
           </div>
           <div className={styles.footer}>
-            <Button color>Wybieram pakiet</Button>
+            <Button>Wybieram pakiet</Button>
           </div>
         </div>
 

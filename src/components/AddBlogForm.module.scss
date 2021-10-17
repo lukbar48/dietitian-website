@@ -1,0 +1,81 @@
+@import '../abstracts/colors.scss';
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(185, 185, 185, 0.5);
+  z-index: 1001;
+}
+
+.formWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 800px;
+  padding: 50px 50px 20px;
+  background-color: white;
+  margin: 0 15px;
+}
+
+.header {
+  position: relative;
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 2rem;
+    cursor: pointer;
+    color: $base-orange;
+    border: none;
+    background-color: transparent;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  
+}
+.input, .select, .textarea {
+  width: 100%;
+  border: rgb(201, 201, 201) 1px solid;
+  height: 35px;
+  border-radius: 4px;
+  padding: 0 6px;
+  margin-bottom: 20px;
+}
+.input {
+  max-width: 400px;
+}
+
+.select {
+  max-width: 150px;
+}
+
+.textarea {
+  height: 100px;
+  padding: 6px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 500px) {
+
+  .header {
+    font-size: 1rem;
+  }
+  .formWrapper {
+    padding: 20px 20px 10px
+  }
+}

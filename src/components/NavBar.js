@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { BrowserRouter as Router, Switch, Route, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { FaBars } from 'react-icons/fa';
 import { RiShoppingCart2Line as ShoppingCart } from 'react-icons/ri';
 import { IoPersonOutline } from "react-icons/io5";

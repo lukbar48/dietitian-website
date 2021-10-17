@@ -1,9 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Slider from 'react-slick';
 import people from 'data/metamorfozyData';
 import { FiChevronRight, FiChevronLeft } from 'react-icons/fi';
 import { IoScale } from 'react-icons/io5';
-import { FaQuoteRight } from 'react-icons/fa';
 import styles from './MetaSlider.module.scss';
 
 const NextArrow = ({onClick}) => {

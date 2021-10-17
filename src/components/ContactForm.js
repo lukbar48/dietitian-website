@@ -49,9 +49,7 @@ const ContactForm = () => {
             Przeczytałem i akceptuję <a href="/polityka-prywatnosci">Politykę prywatności</a>.*
           </span>
         </label>
-        <button type="submit">
-          <Button>Wyślij</Button>
-        </button>
+          <Button button>Wyślij</Button>
       </form>
     </div>
   );

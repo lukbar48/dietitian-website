@@ -8,7 +8,7 @@ const BlogPosts = () => {
     <div className={styles.wrapper}>
       {postsData.map((data, index) => {
         return (
-            <Post {...data} />
+            <Post key={index} {...data} />
         );
       })}
     </div>
