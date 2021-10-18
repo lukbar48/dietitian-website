@@ -41,8 +41,6 @@ const postsData = [
     date: '6.8.2021',
     text: 'Recusandae tempore provident corrupti, sapiente dolores quia aut asperiores quisquam reiciendis illum. Consectetur sint rem ducimus tempora quo pariatur officiis nesciunt incidunt sit quos. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam voluptates, modi assumenda explicabo omnis odit temporibus nulla repudiandae obcaecati soluta voluptate maxime quos, quae eveniet error nam rem magnam ab at corrupti accusantium perferendis! Iure ut quasi eligendi architecto minus nemo nisi maxime, tempore explicabo iste ullam ipsum ratione, corrupti aperiam officiis. Nemo fugit sint quaerat quam cupiditate dolorum corporis nam praesentium cumque! Tenetur, quae? Aperiam aspernatur eaque recusandae repellat, ea nobis. Ea sapiente aliquam nobis voluptatibus reprehenderit ipsa hic?',
   },
-  
-  
 ];
 
 export default postsData;

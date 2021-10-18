@@ -1,0 +1,96 @@
+@import '../abstracts/colors.scss';
+
+.cartItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid rgb(204, 204, 204);
+  padding-bottom: 20px;
+  margin: 20px 0;
+  gap: 10px;
+}
+
+.imageContainer {
+  width: 12%;
+  min-height: 100px;
+  min-width: 100px;
+  position: relative;
+  border: 1px solid rgb(230, 230, 230);
+}
+
+.image {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  object-position: top;
+}
+
+.title {
+  width: 32%;
+}
+
+.amountContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.amountBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: rgb(155, 155, 155) 1px solid;
+  border-radius: 4px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.amount {
+  font-size: 1.4rem;
+}
+
+.priceContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  font-weight: 500;
+  width: 12%;
+  justify-self: flex-end;
+
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: 15px;
+    color: grey;
+  }
+}
+
+@media (max-width: 500px) {
+  .imageContainer {
+    min-height: 70px;
+    min-width: 70px;
+  }
+
+  .title {
+    font-size: 0.7rem;
+  }
+
+  .amountBtn {
+    font-size: 0.8rem;
+  }
+
+  .amount {
+    font-size: 1.1rem;
+  }
+
+  .priceContainer {
+    font-size: 0.9rem;
+  }
+}
