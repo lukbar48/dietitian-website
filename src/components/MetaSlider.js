@@ -5,7 +5,7 @@ import { FiChevronRight, FiChevronLeft } from 'react-icons/fi';
 import { IoScale } from 'react-icons/io5';
 import styles from './MetaSlider.module.scss';
 
-const NextArrow = ({onClick}) => {
+const NextArrow = ({ onClick }) => {
   return (
     <div className={styles.next} onClick={onClick} role="button" tabIndex={0} aria-hidden="true">
       <FiChevronRight />
@@ -13,7 +13,7 @@ const NextArrow = ({onClick}) => {
   );
 };
 
-const PrevArrow = ({onClick}) => {
+const PrevArrow = ({ onClick }) => {
   return (
     <div className={styles.prev} onClick={onClick} role="button" tabIndex={0} aria-hidden="true">
       <FiChevronLeft />
@@ -39,7 +39,7 @@ const MetaSlider = () => {
         breakpoint: 950,
         settings: {
           slidesToShow: 2,
-        }
+        },
       },
       {
         breakpoint: 650,
@@ -47,9 +47,9 @@ const MetaSlider = () => {
           slidesToShow: 1,
           nextArrow: false,
           prevArrow: false,
-        }
+        },
       },
-    ]
+    ],
   };
 
   return (

@@ -40,7 +40,7 @@ const OMnie = () => {
           <div className={styles.sport}>
             <div className={styles.sportText}>
               <h3>Dietetyk sportowy - czym się zajmuje?</h3>
-              <p>
+              <div>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, fugiat? Optio
                 neque expedita voluptate dolore et.
                 <br></br>
@@ -56,7 +56,7 @@ const OMnie = () => {
                 </ul>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam facilis eos commodi
                 perspiciatis mollitia nemo minima quas odio nam ducimus.
-              </p>
+              </div>
             </div>
             <div className={styles.sportImage}>
               <img src={sportImage} alt="" />
@@ -68,7 +68,7 @@ const OMnie = () => {
             </div>
             <div className={styles.clinicalText}>
               <h3>Dietetyk kliniczny - czym się zajmuje?</h3>
-              <p>
+              <div>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, fugiat? Optio
                 neque expedita voluptate dolore et, id autem architecto dicta ipsum vero fugiat
                 reprehenderit nostrum sit, excepturi dolor accusamus ipsam enim qui quidem deleniti
@@ -78,7 +78,7 @@ const OMnie = () => {
                 mollitia alias, amet dolore modi nostrum molestiae dolores dignissimos quam.
                 <br></br>
                 Quod assumenda vitae nisi! Quas dolor inventore sequi officia nisi. Quidem incidunt, fugit exercitationem modi voluptatum unde deserunt minima atque, saepe molestias doloribus, quisquam eaque officia ad enim beatae rem eos in illum.
-              </p>
+              </div>
             </div>
           </div>
           <div className={styles.offerButton}>

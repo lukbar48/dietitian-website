@@ -4,7 +4,7 @@ import { BiMessageRounded } from 'react-icons/bi';
 import { GiSmartphone, GiForkKnifeSpoon } from 'react-icons/gi';
 import { BsLightning } from 'react-icons/bs';
 import OfferBox from 'components/OfferBox';
-import TitleHeader from '../components/TitleHeader';
+import TitleHeader from 'components/TitleHeader';
 import styles from './Oferta.module.scss';
 
 const Oferta = () => {

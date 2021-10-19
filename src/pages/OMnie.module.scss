@@ -20,6 +20,7 @@
 
 .aboutImage {
   flex: 0 0 50%;
+  align-self: flex-end;
   height: 550px;
   background-image: url(../assets/images/man.png);
   background-position: bottom center;
@@ -34,7 +35,7 @@
     padding: 20px 0;
     font-size: 2rem;
   }
-  p {
+  div {
     color: $base-font;
   }
 }
@@ -50,7 +51,7 @@
     color: $base-font;
 
   }
-}
+} 
 
 .sport {
   display: flex;
@@ -66,7 +67,7 @@
       padding: 20px 0;
       font-size: 1.6rem;
     }
-    p ul {
+    div ul {
       margin-left: 25px;
     }
   }
