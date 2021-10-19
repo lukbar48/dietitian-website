@@ -8,11 +8,13 @@ const ShopItem = ({ title, image, price, amount, id }) => {
   return (
     <div className={styles.item}>
       <div className={styles.imageWrapper}>
-        <img
-          className={styles.image}
-          src={require(`assets/images/${image}`).default}
-          alt="produkt"
-        />
+        <a href="/">
+          <img
+            className={styles.image}
+            src={require(`assets/images/${image}`).default}
+            alt="produkt"
+          />
+        </a>
       </div>
       <div className={styles.descriptionWrapper}>
         <div className={styles.title}>
@@ -29,7 +31,7 @@ const ShopItem = ({ title, image, price, amount, id }) => {
 
         <div className={styles.price}>{price} zł</div>
         <div className={styles.button}>
-          <Button onClick={()=>addItem(id)}>Dodaj do koszyka</Button>
+          <Button onClick={() => addItem(id)}>Dodaj do koszyka</Button>
         </div>
       </div>
     </div>

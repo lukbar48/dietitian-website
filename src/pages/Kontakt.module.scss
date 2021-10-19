@@ -7,22 +7,24 @@
 
 .contact {
   width: 100%;
-  margin: 0 5%;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  gap: 50px;
-  padding: 50px 0;
+  padding: 50px;
+  gap: 5%;
 }
 
 .formContainer {
-  width: 48%;
+  width: 47%;
+  max-width: 500px;
 }
 
 .imageContainer {
-  width: 48%;
+  width: 47%;
   overflow: hidden;
+  max-width: 650px;
 
   .image {
     width: 100%;
@@ -32,7 +34,7 @@
   }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 950px) {
   .formContainer {
     width: 100%;
   }
