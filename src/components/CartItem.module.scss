@@ -17,6 +17,7 @@
   min-width: 100px;
   position: relative;
   border: 1px solid rgb(230, 230, 230);
+  background-color: white;
 }
 
 .image {
@@ -25,8 +26,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  object-fit: cover;
-  object-position: top;
+  object-fit: contain;
+  object-position: center;
 }
 
 .title {

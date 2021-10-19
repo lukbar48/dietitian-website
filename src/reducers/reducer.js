@@ -26,9 +26,10 @@ function reducer(state, action) {
     }
     case 'ADD_ITEM': {
       let newItem = cartList.filter((item) => item.id === action.payload);
+      let number = state.amount + 1
       // newItem = Object.assign({}, ...newItem );
       // console.log(state.cart)
-      return { ...state, cart: newItem };
+      return { ...state, cart: newItem, amount: number};
     }
 
     default:

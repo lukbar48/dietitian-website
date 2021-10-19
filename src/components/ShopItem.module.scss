@@ -1,0 +1,74 @@
+@import '../abstracts/colors.scss';
+
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30%;
+  max-width: 350px;
+  margin: 25px 15px;
+  border: 1px solid rgb(202, 202, 202);
+  background-color: white;
+}
+
+.imageWrapper {
+  height: 180px;
+  width: 100%;
+  position: relative;
+  justify-self: flex-start;
+}
+
+.image {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: contain;
+  object-position: center;
+}
+
+.descriptionWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.title {
+  margin: 10px 0;
+
+  a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: black;
+  }
+}
+
+.text {
+  margin-bottom: 10px;
+  font-size: 0.8rem;
+  color: grey;
+}
+
+.price {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.button {
+  width: 100%;
+  margin: -5px 0 -10px;
+}
+
+@media (max-width: 1000px) {
+  .item {
+    width: 45%;
+  }
+}
+
+@media (max-width: 700px) {
+  .item {
+    width: 100%;
+  }
+}

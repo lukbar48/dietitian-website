@@ -1,5 +1,12 @@
 const cartData = [
   {
+    title: 'Wsparcie 1 miesięczne',
+    image: 'zywienienatak.jpg',
+    price: 299.99,
+    amount: 1,
+    id: 1,
+  },
+  {
     title: 'Dieta ketogeniczna - przepisy ebook',
     image: 'ketodiet.jpg',
     price: 39.99,

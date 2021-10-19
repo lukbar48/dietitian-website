@@ -9,11 +9,13 @@ const Kontakt = () => {
     <>
       <TitleHeader>Kontakt</TitleHeader>
       <div className={styles.wrapper}>
-        <div className={styles.formContainer}>
-          <ContactForm />
-        </div>
-        <div className={styles.imageContainer}>
-          <img className={styles.image} src={contactImage} alt="contact" />
+        <div className={styles.contact}>
+          <div className={styles.formContainer}>
+            <ContactForm />
+          </div>
+          <div className={styles.imageContainer}>
+            <img className={styles.image} src={contactImage} alt="contact" />
+          </div>
         </div>
       </div>
     </>

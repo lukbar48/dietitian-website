@@ -1,4 +1,4 @@
-const cartData = [
+const cartList = [
   {
     title: 'Wsparcie 1 miesięczne',
     image: 'zywienienatak.jpg',
@@ -43,4 +43,4 @@ const cartData = [
   },
 ];
 
-export default cartData;
+export default cartList;

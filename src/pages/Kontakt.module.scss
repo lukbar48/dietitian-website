@@ -1,35 +1,43 @@
 @import '../abstracts/colors.scss';
 
 .wrapper {
+  width: 100%;
+  background-color: $base-grey;
+}
+
+.contact {
+  width: 100%;
   margin: 0 5%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 50px;
-  // width: 95vw;
+  gap: 50px;
+  padding: 50px 0;
 }
 
 .formContainer {
-  flex: 0 0 48%;
+  width: 48%;
 }
 
 .imageContainer {
-  flex: 0 0 48%;
+  width: 48%;
+  overflow: hidden;
 
   .image {
-    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
   }
 }
 
 @media (max-width: 850px) {
-  .wrapper {
-    flex-wrap: wrap;
-  }
   .formContainer {
-    flex: 0 0 100%;
+    width: 100%;
   }
 
   .imageContainer {
-    flex: 0 0 100%;
+    width: 100%;
   }
 }

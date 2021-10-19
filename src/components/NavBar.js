@@ -5,9 +5,11 @@ import { RiShoppingCart2Line as ShoppingCart } from 'react-icons/ri';
 import { IoPersonOutline } from 'react-icons/io5';
 import logo from 'assets/images/zywienienatak.jpg';
 import { links, socials } from 'data/data';
+import { useGlobalContext } from 'contexts/context';
 import styles from './NavBar.module.scss';
 
 const NavBar = () => {
+  const { amount } = useGlobalContext();
   const [showSidebar, setShowSidebar] = useState(false);
   const linksRef = useRef(null);
   const linksListRef = useRef(null);
@@ -68,7 +70,7 @@ const NavBar = () => {
           >
             <ShoppingCart />{' '}
             <div className={styles.amountWrapper}>
-              <span className={styles.totalAmount}>4</span>
+              <span className={styles.totalAmount}>{amount}</span>
             </div>
           </NavLink>
           <NavLink

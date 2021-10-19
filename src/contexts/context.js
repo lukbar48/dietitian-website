@@ -5,7 +5,7 @@ import cartData from '../data/cartData';
 const AppContext = React.createContext();
 
 const initialState = {
-  cart: cartData,
+  cart: [],
   total: 0,
   amount: 0,
 };
