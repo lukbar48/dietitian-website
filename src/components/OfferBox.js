@@ -94,7 +94,7 @@ const OfferBox = () => {
             </ul>
           </div>
           <div className={styles.footer}>
-            <Button onClick={() => addItem(3)} url="/koszyk">
+            <Button onClick={() => addItem(3)}>
               Wybieram pakiet
             </Button>
           </div>

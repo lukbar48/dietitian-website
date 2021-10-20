@@ -25,8 +25,15 @@ const AppProvider = ({ children }) => {
   const changeAmount = (id, type) => {
     dispatch({ type: 'CHANGE_AMOUNT', payload: { id, type } });
   };
+
+  useEffect(() => {
+    dispatch({ type: 'GET_TOTAL' });
+  }, [state.cart]);
+
   return (
-    <AppContext.Provider value={{ addItem, clearCart, changeAmount, removeItem, ...state }}>
+    <AppContext.Provider
+      value={{ addItem, clearCart, changeAmount, removeItem, ...state }}
+    >
       {children}
     </AppContext.Provider>
   );

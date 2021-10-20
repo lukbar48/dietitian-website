@@ -19,7 +19,9 @@
     "global-require": "off",
     "import/no-dynamic-require": "off",
     "react/jsx-props-no-spreading": "off",
-    "react/no-array-index-key": "off"
+    "react/no-array-index-key": "off",
+    "no-shadow": "off",
+    "no-param-reassign": "off"
   },
   "settings": {
     "import/resolver": {

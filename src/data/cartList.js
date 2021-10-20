@@ -41,6 +41,20 @@ const cartList = [
     amount: 1,
     id: 6,
   },
+  {
+    title: 'Plan treningowy na siłownie',
+    image: 'workout.jpg',
+    price: 54.99,
+    amount: 1,
+    id: 7,
+  },
+  {
+    title: 'Kurs wideo - dietetyka sportowa',
+    image: 'course.png',
+    price: 299.99,
+    amount: 1,
+    id: 8,
+  },
 ];
 
 export default cartList;
