@@ -31,7 +31,9 @@ const OfferBox = () => {
             </ul>
           </div>
           <div className={styles.footer}>
-            <Button onClick={() => addItem(1)}>Wybieram pakiet</Button>
+            <Button onClick={() => addItem(1)} url="/koszyk">
+              Wybieram pakiet
+            </Button>
           </div>
         </div>
 
@@ -60,7 +62,7 @@ const OfferBox = () => {
             </ul>
           </div>
           <div className={styles.footer}>
-            <Button onClick={() => addItem(2)}>
+            <Button onClick={() => addItem(2)} url="/koszyk">
               Wybieram pakiet
             </Button>
           </div>
@@ -94,7 +96,7 @@ const OfferBox = () => {
             </ul>
           </div>
           <div className={styles.footer}>
-            <Button onClick={() => addItem(3)}>
+            <Button onClick={() => addItem(3)} url="/koszyk">
               Wybieram pakiet
             </Button>
           </div>

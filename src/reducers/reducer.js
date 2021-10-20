@@ -1,5 +1,4 @@
-// import { useGlobalContext } from 'contexts/context';
-import cartList from '../data/cartList';
+import cartList from '../data/cartData';
 
 function reducer(state, action) {
   switch (action.type) {
@@ -11,7 +10,7 @@ function reducer(state, action) {
         cart: state.cart.filter((item) => item.id !== action.payload),
       };
     case 'CHANGE_AMOUNT': {
-      let newCart = state.cart
+      const newCart = state.cart
         .map((item) => {
           if (item.id === action.payload.id) {
             if (action.payload.type === 'plus') {
@@ -37,27 +36,11 @@ function reducer(state, action) {
         return item;
       });
 
-
-      // state.cart.map((item) => {
-      //   if (item.id === obj.id) {
-      //     newItem = null;
-      //     item.amount += 1;
-      //   }
-      //   return item;
-      // });
-
-      // console.log(state);
-
       if (newItem) {
-        // console.log('dodano nowy przedmiot')
         return { ...state, cart: state.cart.concat(...newItem)};
       } else {
-        // console.log('zwiększono ilość przedmiotu')
-        // console.log(state.cart.map(item=>item.amount));
-        // console.log(state.cart)
         return { ...state};
       }
-      // return { ...state, cart: state.cart.concat(...newItem)};
     }
     case 'GET_TOTAL': {
       const { total, amount } = state.cart.reduce(

@@ -1,6 +1,5 @@
 import React, { useReducer, useContext, useEffect } from 'react';
 import reducer from '../reducers/reducer';
-import cartData from '../data/cartData';
 
 const AppContext = React.createContext();
 
@@ -11,7 +10,12 @@ const initialState = {
 };
 
 const AppProvider = ({ children }) => {
-  const [state, dispatch] = useReducer(reducer, initialState);
+  const [state, dispatch] = useReducer(reducer, initialState, () => {
+    const localData = localStorage.getItem('cartItems');
+    return localData
+      ? JSON.parse(localData)
+      : initialState;
+  });
 
   const clearCart = () => {
     dispatch({ type: 'CLEAR_CART' });
@@ -28,12 +32,11 @@ const AppProvider = ({ children }) => {
 
   useEffect(() => {
     dispatch({ type: 'GET_TOTAL' });
+    localStorage.setItem('cartItems', JSON.stringify(state));
   }, [state.cart]);
 
   return (
-    <AppContext.Provider
-      value={{ addItem, clearCart, changeAmount, removeItem, ...state }}
-    >
+    <AppContext.Provider value={{ addItem, clearCart, changeAmount, removeItem, ...state }}>
       {children}
     </AppContext.Provider>
   );

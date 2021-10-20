@@ -5,7 +5,7 @@ import { BsBasket3Fill } from 'react-icons/bs';
 import Button from './Button';
 import styles from './ShopItem.module.scss';
 
-const ShopItem = ({ title, image, price, amount, id }) => {
+const ShopItem = ({ title, image, price, amount, id, setOpenModal }) => {
   const { addItem } = useGlobalContext();
   return (
     <div className={styles.item}>
@@ -33,7 +33,10 @@ const ShopItem = ({ title, image, price, amount, id }) => {
 
         <div className={styles.price}>{price} zł</div>
         <div className={styles.button}>
-          <Button onClick={() => addItem(id)}>
+          <Button onClick={() => {
+            addItem(id)
+            setOpenModal(true)
+          }}>
             Dodaj do koszyka <BsBasket3Fill className={styles.basketBtn} />
           </Button>
         </div>
