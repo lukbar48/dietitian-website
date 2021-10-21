@@ -152,30 +152,30 @@
   color: $base-orange !important;
 }
 
-// @media screen and (max-width: 1200px) {
-//   .center {
-//     display: block;
-//   }
+@media screen and (max-width: 1200px) {
+  .center {
+    display: block;
+  }
 
-//   .links {
-//     display: block;
-//     height: 0;
-//     overflow: hidden;
-//   }
+  .links {
+    display: block;
+    height: 0;
+    overflow: hidden;
+  }
 
-//   .linksList {
-//     flex-direction: column;
-//   }
+  .linksList {
+    flex-direction: column;
+  }
 
-//   .links li {
-//     padding: 15px 0;
-//   }
+  .links li {
+    padding: 15px 0;
+  }
 
-//   .mobileNav {
-//     display: inline-block;
-//   }
+  .mobileNav {
+    display: inline-block;
+  }
 
-//   .miniWidgets {
-//     display: none;
-//   }
-// }
+  .miniWidgets {
+    display: none;
+  }
+}

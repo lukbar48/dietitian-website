@@ -12,7 +12,7 @@ import Koszyk from 'pages/Koszyk';
 import Regulamin from 'pages/Regulamin';
 import Polityka from 'pages/Polityka';
 import Login from 'pages/Login';
-// import Error from 'pages/Error';
+import Error from 'pages/Error';
 // import ShowBlogPost from 'pages/ShowBlogPost';
 // import ShowShopItem from 'pages/ShowShopItem';
 import Footer from 'components/Footer';
@@ -36,7 +36,7 @@ function App() {
           <Route path="/regulamin" component={Regulamin} />
           <Route path="/polityka-prywatnosci" component={Polityka} />
           <Route path="/login" component={Login} />
-          {/* <Route path="*" component={Error} /> */}
+          <Route path="*" component={Error} />
         </Switch>
         <Footer />
       </div>

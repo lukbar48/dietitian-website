@@ -1,0 +1,17 @@
+@import '../abstracts/colors.scss';
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50vh;
+  background-color: $base-grey;
+}
+
+.header {
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
