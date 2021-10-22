@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import GlobalStyle from 'theme/GlobalStyle';
 import NavBar from 'components/NavBar';
@@ -16,21 +16,23 @@ import Error from 'pages/Error';
 import ShowBlogPost from 'pages/ShowBlogPost';
 import ShowShopItem from 'pages/ShowShopItem';
 import Footer from 'components/Footer';
- 
+
 function App() {
+  const [login, setLogin] = useState(false);
+
   return (
     <Router>
-      <GlobalStyle/>
-      <div className='App'>
-        <NavBar />
+      <GlobalStyle />
+      <div className="App">
+        <NavBar login={login} setLogin={setLogin} />
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/o-mnie" component={OMnie} />
           <Route path="/oferta" component={Oferta} />
           <Route path="/sklep" exact component={Sklep} />
           <Route path="/sklep/:id" component={ShowShopItem} />
-          <Route path="/blog" component={Blog} />
-          <Route path="/blog/:id" exact component={ShowBlogPost} />
+          <Route path="/blog" exact component={Blog} />
+          <Route path="/blog/:id" component={ShowBlogPost} />
           <Route path="/kontakt" component={Kontakt} />
           <Route path="/koszyk" component={Koszyk} />
           <Route path="/regulamin" component={Regulamin} />

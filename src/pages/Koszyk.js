@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import TitleHeader from 'components/TitleHeader';
 import CartItem from 'components/CartItem';
 import Button from 'components/Button';
@@ -6,6 +6,9 @@ import { useGlobalContext } from 'contexts/context';
 import styles from './Koszyk.module.scss';
 
 const Koszyk = () => {
+  useEffect(() => {
+    window.scroll(0,0)
+  }, [])
   const { clearCart, total, cart, amount } = useGlobalContext();
   return (
     <>

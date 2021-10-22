@@ -8,7 +8,7 @@ import { links, socials } from 'data/data';
 import { useGlobalContext } from 'contexts/context';
 import styles from './NavBar.module.scss';
 
-const NavBar = () => {
+const NavBar = ({ login, setLogin }) => {
   const { amount } = useGlobalContext();
   const [showSidebar, setShowSidebar] = useState(false);
   const linksRef = useRef(null);
@@ -74,12 +74,18 @@ const NavBar = () => {
             </div>
           </NavLink>
           <NavLink
-            onClick={() => setShowSidebar(!showSidebar)}
+            onClick={() => {
+              setShowSidebar(!showSidebar)
+              if (login) {
+                setLogin(false)
+              }
+            }}
             className={styles.login}
-            to="/login"
+            to={login ? '/' : '/login'}
+            // to="/login"
           >
             <IoPersonOutline />
-            <p>Zaloguj</p>
+            <p>{login ? 'Wyloguj' : 'Zaloguj'}</p>
           </NavLink>
           {socials.map((social) => {
             const { id, url, icon } = social;

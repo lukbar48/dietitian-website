@@ -1,39 +1,50 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import React, {useRef} from 'react';
+import { Link } from 'react-router-dom';
 import { AiOutlineSearch } from 'react-icons/ai';
 import { BsPlusLg } from 'react-icons/bs';
 import styles from './BlogCategories.module.scss'; 
 
-const BlogCategories = ({ setOpenForm, setBlogsCategory }) => {
+const BlogCategories = ({ setOpenForm, setBlogsCategory, setSearchTerm }) => {
+
+  const searchValue = useRef()
+
+  const searchPost = () => {
+    setSearchTerm(searchValue.current.value)
+  }
+
+  function handleSubmit(e) {
+    e.preventDefault()
+  }
+
   return (
     <div className={styles.categories}>
       <ul className={styles.list}>
-        <NavLink exact onClick={()=>setBlogsCategory('wszystkie')} to="/blog" className={styles.link} activeClassName={styles.active}>
+        <Link exact onClick={()=>setBlogsCategory('wszystkie')} to="/blog" className={styles.link}>
           Wszystkie
-        </NavLink>
-        <NavLink onClick={()=>setBlogsCategory('zdrowie')} className={styles.link} activeClassName={styles.active} to="/blog/zdrowie">
+        </Link>
+        <Link onClick={()=>setBlogsCategory('zdrowie')} className={styles.link}  to="/blog">
           Zdrowie
-        </NavLink>
-        <NavLink onClick={()=>setBlogsCategory('suplementacja')} className={styles.link} activeClassName={styles.active} to="/blog/suplementacja">
+        </Link>
+        <Link onClick={()=>setBlogsCategory('suplementacja')} className={styles.link}  to="/blog">
           Suplementacja
-        </NavLink>
-        <NavLink onClick={()=>setBlogsCategory('sport')} className={styles.link} activeClassName={styles.active} to="/blog/sport">
+        </Link>
+        <Link onClick={()=>setBlogsCategory('sport')} className={styles.link}  to="/blog">
           Sport
-        </NavLink>
-        <NavLink onClick={()=>setBlogsCategory('przepisy')} className={styles.link} activeClassName={styles.active} to="/blog/przepisy">
+        </Link>
+        <Link onClick={()=>setBlogsCategory('przepisy')} className={styles.link}  to="/blog">
           Przepisy
-        </NavLink>
-        <NavLink onClick={()=>setBlogsCategory('inne')} className={styles.link} activeClassName={styles.active} to="/blog/inne">
+        </Link>
+        <Link onClick={()=>setBlogsCategory('inne')} className={styles.link}  to="/blog">
           Inne
-        </NavLink>
+        </Link>
       </ul>
       <div className={styles.sideNav}>
-        <div className={styles.search}>
-          <input type="text" placeholder="Wpisz szukaną frazę" />
+        <form className={styles.search} onSubmit={handleSubmit}>
+          <input ref={searchValue} onChange={searchPost} type="text" placeholder="Wpisz szukaną frazę" />
           <button type="submit">
             <AiOutlineSearch />{' '}
           </button>
-        </div>
+        </form>
         <button onClick={() => setOpenForm(true)} className={styles.addBlog} type="button">
           <BsPlusLg />
           <span>Dodaj nowy post</span>

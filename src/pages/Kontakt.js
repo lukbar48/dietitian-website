@@ -1,10 +1,13 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import TitleHeader from 'components/TitleHeader';
 import ContactForm from 'components/ContactForm';
 import contactImage from 'assets/images/computer.jpg';
 import styles from './Kontakt.module.scss';
 
 const Kontakt = () => {
+  useEffect(() => {
+    window.scroll(0,0)
+  }, [])
   return (
     <>
       <TitleHeader>Kontakt</TitleHeader>

@@ -12,6 +12,7 @@ const AddBlogForm = ({ setOpenForm }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    const id = (Math.random()*1000000).toFixed()*1
     const date = `${new Date().getDate()}.${new Date().getMonth() + 1}.${new Date().getFullYear()}`;
     const newPost = {
       title,
@@ -19,10 +20,12 @@ const AddBlogForm = ({ setOpenForm }) => {
       category,
       text,
       date,
+      id
     };
 
     postsData.unshift(newPost);
     setOpenForm(false);
+    localStorage.setItem('blogItems', JSON.stringify(postsData));
   };
 
   return (

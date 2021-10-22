@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import TitleHeader from 'components/TitleHeader';
 import ShopItem from 'components/ShopItem';
 import cartList from 'data/shopData';
@@ -7,6 +7,9 @@ import styles from './Sklep.module.scss';
 
 const Sklep = () => {
   const [openModal, setOpenModal] = useState(false);
+  useEffect(() => {
+    window.scroll(0,0)
+  }, [])
 
   return (
     <>
