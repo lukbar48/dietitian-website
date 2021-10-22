@@ -1,4 +1,4 @@
-import cartList from '../data/cartData';
+import cartList from '../data/shopData';
 
 function reducer(state, action) {
   switch (action.type) {

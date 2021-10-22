@@ -13,10 +13,10 @@ import Regulamin from 'pages/Regulamin';
 import Polityka from 'pages/Polityka';
 import Login from 'pages/Login';
 import Error from 'pages/Error';
-// import ShowBlogPost from 'pages/ShowBlogPost';
-// import ShowShopItem from 'pages/ShowShopItem';
+import ShowBlogPost from 'pages/ShowBlogPost';
+import ShowShopItem from 'pages/ShowShopItem';
 import Footer from 'components/Footer';
-
+ 
 function App() {
   return (
     <Router>
@@ -27,10 +27,10 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route path="/o-mnie" component={OMnie} />
           <Route path="/oferta" component={Oferta} />
-          <Route path="/sklep" component={Sklep} />
-          {/* <Route path="/sklep/:id" component={ShowShopItem} /> */}
+          <Route path="/sklep" exact component={Sklep} />
+          <Route path="/sklep/:id" component={ShowShopItem} />
           <Route path="/blog" component={Blog} />
-          {/* <Route path="/blog/:id" component={ShowBlogPost} /> */}
+          <Route path="/blog/:id" exact component={ShowBlogPost} />
           <Route path="/kontakt" component={Kontakt} />
           <Route path="/koszyk" component={Koszyk} />
           <Route path="/regulamin" component={Regulamin} />

@@ -14,9 +14,9 @@ const BlogPosts = ({blogsCategory}) => {
 
   return (
     <div className={styles.wrapper}>
-      {filteredData.map((data, index) => {
+      {filteredData.map((data) => {
         return (
-            <Post key={index} {...data} />
+            <Post key={data.title} {...data} /> 
         );
       })}
     </div>

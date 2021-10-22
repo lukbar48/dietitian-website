@@ -16,8 +16,8 @@ const Koszyk = () => {
           {amount ? (
             <>
               <div className={styles.cart}>
-                {cart.map((item, index) => {
-                  return <CartItem key={index} {...item} />;
+                {cart.map((item) => {
+                  return <CartItem key={item.id} {...item} />;
                 })}
               </div>
               <div className={styles.summary}>

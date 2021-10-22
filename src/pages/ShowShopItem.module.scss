@@ -8,9 +8,70 @@
   background-color: $base-grey;
 }
 
-.header {
-  margin-top: 80px;
+.product {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1100px;
+  margin: 80px auto 40px;
+}
+
+.imageWrapper {
+  width: 50%;
+  height: 350px;
+  overflow: hidden;
+  position: relative;
+  padding: 20px 40px 10px;
+}
+
+.image {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: contain;
+  object-position: center;
+}
+
+.descriptionWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 50%;
+  padding: 20px 40px 10px;
+
+  h2 {
+    margin: 25px 0;
+    font-size: 1.8rem;
+  }
+
+  .price {
+    margin: 20px 0;
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+
+  p {
+    margin: 20px 0;
+    color: grey;
+  }
+
+  .category {
+    margin: 15px 0 10px;
+    line-height: 30px;
+    background-color: $base-blue;
+    padding: 0 15px;
+    border-radius: 4px;
+    color: white;
+  }
+}
+
+@media (max-width: 800px) {
+  .imageWrapper, .descriptionWrapper {
+    width: 100%;
+  }
 }

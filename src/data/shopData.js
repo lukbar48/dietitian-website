@@ -1,10 +1,11 @@
-const cartData = [
+const shopData = [
   {
     title: 'Wsparcie 1 miesięczne',
     image: 'zywienienatak.jpg',
     price: 299.99,
     amount: 1,
     id: 1,
+    category: 'współpraca'
   },
   {
     title: 'Wsparcie 3 miesięczne',
@@ -12,6 +13,7 @@ const cartData = [
     price: 759.99,
     amount: 1,
     id: 2,
+    category: 'współpraca'
   },
   {
     title: 'Wsparcie 6 miesięczne',
@@ -19,6 +21,7 @@ const cartData = [
     price: 1399.99,
     amount: 1,
     id: 3,
+    category: 'współpraca'
   },
   {
     title: 'Dieta ketogeniczna - przepisy ebook',
@@ -26,6 +29,7 @@ const cartData = [
     price: 39.99,
     amount: 1,
     id: 4,
+    category: 'książki'
   },
   {
     title: 'Dieta śródziemnomorska - przepisy ebook',
@@ -33,6 +37,7 @@ const cartData = [
     price: 44.99,
     amount: 1,
     id: 5,
+    category: 'książki'
   },
   {
     title: 'Dieta wegańska - przepisy ebook',
@@ -40,6 +45,7 @@ const cartData = [
     price: 34.99,
     amount: 1,
     id: 6,
+    category: 'książki'
   },
   {
     title: 'Plan treningowy na siłownie - książka',
@@ -47,6 +53,7 @@ const cartData = [
     price: 54.99,
     amount: 1,
     id: 7,
+    category: 'plany treningowe'
   },
   {
     title: 'Zaplanuj trening w domu - książka',
@@ -54,6 +61,7 @@ const cartData = [
     price: 54.99,
     amount: 1,
     id: 8,
+    category: 'plany treningowe'
   },
   {
     title: 'Planer treningowy - książka',
@@ -61,6 +69,7 @@ const cartData = [
     price: 29.99,
     amount: 1,
     id: 9,
+    category: 'plany treningowe'
   },
   {
     title: 'Kurs wideo - dietetyka sportowa',
@@ -68,6 +77,7 @@ const cartData = [
     price: 299.99,
     amount: 1,
     id: 10,
+    category: 'kurs wideo'
   },
   {
     title: 'Kurs wideo - dieta w cukrzycy',
@@ -75,6 +85,7 @@ const cartData = [
     price: 279.99,
     amount: 1,
     id: 11,
+    category: 'kurs wideo'
   },
   {
     title: 'Kurs wideo - dieta w chorobach układu krążenia',
@@ -82,7 +93,8 @@ const cartData = [
     price: 329.99,
     amount: 1,
     id: 12,
+    category: 'kurs wideo'
   },
 ];
 
-export default cartData;
+export default shopData;

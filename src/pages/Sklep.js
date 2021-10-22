@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import TitleHeader from 'components/TitleHeader';
 import ShopItem from 'components/ShopItem';
-import cartList from 'data/cartData';
+import cartList from 'data/shopData';
 import AddedToBasket from 'components/AddedToBasket';
 import styles from './Sklep.module.scss';
 
@@ -13,8 +13,8 @@ const Sklep = () => {
       <TitleHeader>Sklep</TitleHeader>
       <div className={styles.wrapper}>
         <div className={styles.items}>
-          {cartList.map((item, index) => {
-            return <ShopItem setOpenModal={setOpenModal} key={index} {...item} />;
+          {cartList.map((item) => {
+            return <ShopItem setOpenModal={setOpenModal} key={item.id} {...item} />;
           })}
         </div>
         
