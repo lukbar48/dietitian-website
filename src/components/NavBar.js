@@ -8,8 +8,8 @@ import { links, socials } from 'data/data';
 import { useGlobalContext } from 'contexts/context';
 import styles from './NavBar.module.scss';
 
-const NavBar = ({ login, setLogin }) => {
-  const { amount } = useGlobalContext();
+const NavBar = () => {
+  const { amount, login, setLogin } = useGlobalContext();
   const [showSidebar, setShowSidebar] = useState(false);
   const linksRef = useRef(null);
   const linksListRef = useRef(null);
@@ -82,7 +82,6 @@ const NavBar = ({ login, setLogin }) => {
             }}
             className={styles.login}
             to={login ? '/' : '/login'}
-            // to="/login"
           >
             <IoPersonOutline />
             <p>{login ? 'Wyloguj' : 'Zaloguj'}</p>

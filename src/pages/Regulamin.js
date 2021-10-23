@@ -1,11 +1,8 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import TitleHeader from '../components/TitleHeader';
 import styles from './Regulamin.module.scss'
 
 const Regulamin = () => {
-  useEffect(() => {
-    window.scroll(0,0)
-  }, [])
   return (
     <>
       <TitleHeader>Regulamin</TitleHeader>

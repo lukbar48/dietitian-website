@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import Button from 'components/Button';
 import styles from './OMnie.module.scss';
 import sportImage from '../assets/images/sport.jpg';
@@ -6,9 +6,7 @@ import clinicalImage from '../assets/images/clinical.jpg';
 import TitleHeader from '../components/TitleHeader';
 
 const OMnie = () => {
-  useEffect(() => {
-    window.scroll(0,0)
-  }, [])
+  
   return (
     <>
       <TitleHeader>O mnie</TitleHeader>

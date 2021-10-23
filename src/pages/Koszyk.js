@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import TitleHeader from 'components/TitleHeader';
 import CartItem from 'components/CartItem';
 import Button from 'components/Button';
@@ -6,10 +6,7 @@ import { useGlobalContext } from 'contexts/context';
 import styles from './Koszyk.module.scss';
 
 const Koszyk = () => {
-  useEffect(() => {
-    window.scroll(0,0)
-  }, [])
-  const { clearCart, total, cart, amount } = useGlobalContext();
+  const { clearCart, total, cart, amount, login } = useGlobalContext();
   return (
     <>
       <TitleHeader>Koszyk</TitleHeader>
@@ -32,12 +29,18 @@ const Koszyk = () => {
                   <Button onClick={clearCart} button secondary>
                     Wyczyść koszyk
                   </Button>
-                  <Button>Przejdź do płatności</Button>
+                  {login ? (
+                    <Button url="/koszyk/zakup">Przejdź do płatności</Button>
+                  ) : (
+                    <Button url="/login">Zaloguj się aby dokończyć zakup</Button>
+                  )}
                 </div>
               </div>
             </>
           ) : (
-            <h3 className={styles.emptyBasket}>Nie dodałeś jeszcze żadnego elementu do swojego zamówienia. </h3>
+            <h3 className={styles.emptyBasket}>
+              Nie dodałeś jeszcze żadnego elementu do swojego zamówienia.{' '}
+            </h3>
           )}
         </div>
       </div>

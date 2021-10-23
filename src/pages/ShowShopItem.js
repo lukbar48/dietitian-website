@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import { useParams } from 'react-router-dom';
 import { useGlobalContext } from 'contexts/context';
 import { BsBasket3Fill } from 'react-icons/bs';
@@ -10,9 +10,6 @@ const ShowShopItem = () => {
   const { id } = useParams();
   const { addItem } = useGlobalContext();
 
-  useEffect(() => {
-    window.scroll(0,0)
-  }, [])
 
   let getItem = shopData.filter((item) => item.id === id * 1);
   getItem = Object.assign({}, ...getItem);

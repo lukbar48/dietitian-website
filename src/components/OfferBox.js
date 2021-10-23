@@ -2,6 +2,7 @@ import React from 'react';
 import { useGlobalContext } from 'contexts/context';
 import Button from './Button';
 import styles from './OfferBox.module.scss';
+import Btn from './Btn';
 
 const OfferBox = () => {
   const { addItem } = useGlobalContext();
@@ -31,9 +32,11 @@ const OfferBox = () => {
             </ul>
           </div>
           <div className={styles.footer}>
-            <Button onClick={() => addItem(1)} url="/koszyk">
-              Wybieram pakiet
-            </Button>
+            <a href="/koszyk">
+              <Btn fontSize="1.05rem" onClick={() => addItem(1)}>
+                Wybieram pakiet
+              </Btn>
+            </a>
           </div>
         </div>
 
@@ -62,9 +65,11 @@ const OfferBox = () => {
             </ul>
           </div>
           <div className={styles.footer}>
-            <Button onClick={() => addItem(2)} url="/koszyk">
-              Wybieram pakiet
-            </Button>
+            <a href="/koszyk">
+              <Btn fontSize="1.05rem" onClick={() => addItem(1)}>
+                Wybieram pakiet
+              </Btn>
+            </a>
           </div>
         </div>
 
@@ -96,9 +101,11 @@ const OfferBox = () => {
             </ul>
           </div>
           <div className={styles.footer}>
-            <Button onClick={() => addItem(3)} url="/koszyk">
-              Wybieram pakiet
-            </Button>
+            <a href="/koszyk">
+              <Btn fontSize="1.05rem" onClick={() => addItem(1)}>
+                Wybieram pakiet
+              </Btn>
+            </a>
           </div>
         </div>
       </div>

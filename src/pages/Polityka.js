@@ -1,11 +1,8 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import TitleHeader from 'components/TitleHeader';
 import styles from './Polityka.module.scss';
 
 const Polityka = () => {
-  useEffect(() => {
-    window.scroll(0,0)
-  }, [])
   return (
     <>
       <TitleHeader>Polityka prywatności</TitleHeader>

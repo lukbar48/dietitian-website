@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import { CgFileDocument, CgGym } from 'react-icons/cg';
 import { BiMessageRounded } from 'react-icons/bi';
 import { GiSmartphone, GiForkKnifeSpoon } from 'react-icons/gi';
@@ -8,9 +8,7 @@ import TitleHeader from 'components/TitleHeader';
 import styles from './Oferta.module.scss';
 
 const Oferta = () => {
-  useEffect(() => {
-    window.scroll(0,0)
-  }, [])
+  
   return (
     <>
       <TitleHeader>Oferta</TitleHeader>

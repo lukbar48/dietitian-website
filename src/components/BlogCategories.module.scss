@@ -97,11 +97,12 @@
   margin: 8px;
   padding: 0 16px;
   border: 1px solid rgb(214, 214, 214);
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 500;
   border-radius: 4px;
   cursor: pointer;
   background-color: $base-blue;
   color: white;
   transition: 0.3s all;
+  text-decoration: none;
 }

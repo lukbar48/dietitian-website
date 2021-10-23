@@ -16,15 +16,17 @@ import Error from 'pages/Error';
 import ShowBlogPost from 'pages/ShowBlogPost';
 import ShowShopItem from 'pages/ShowShopItem';
 import Footer from 'components/Footer';
+import ScrollToTop from 'components/ScrollToTop';
+
 
 function App() {
-  const [login, setLogin] = useState(false);
 
   return (
     <Router>
       <GlobalStyle />
+      <ScrollToTop />
       <div className="App">
-        <NavBar login={login} setLogin={setLogin} />
+        <NavBar />
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/o-mnie" component={OMnie} />

@@ -8,11 +8,8 @@ const ShowBlogPost = () => {
   const [posts, setPosts] = useState([])
 
   useEffect(() => {
-    window.scroll(0, 0);
-
       const localData = localStorage.getItem('blogItems');
       setPosts(localData ? JSON.parse(localData) : postsData)
-
   }, []);
 
   let getPost = posts.filter((item) => item.id === id * 1);
