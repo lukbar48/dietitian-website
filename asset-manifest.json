@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/zywienie-website/static/css/main.1231d423.chunk.css",
-    "main.js": "/zywienie-website/static/js/main.b8165635.chunk.js",
-    "main.js.map": "/zywienie-website/static/js/main.b8165635.chunk.js.map",
+    "main.css": "/zywienie-website/static/css/main.5f913099.chunk.css",
+    "main.js": "/zywienie-website/static/js/main.189c076f.chunk.js",
+    "main.js.map": "/zywienie-website/static/js/main.189c076f.chunk.js.map",
     "runtime-main.js": "/zywienie-website/static/js/runtime-main.fccd0dfc.js",
     "runtime-main.js.map": "/zywienie-website/static/js/runtime-main.fccd0dfc.js.map",
     "static/css/2.e160430c.chunk.css": "/zywienie-website/static/css/2.e160430c.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/2.53546d9a.chunk.js.map": "/zywienie-website/static/js/2.53546d9a.chunk.js.map",
     "index.html": "/zywienie-website/index.html",
     "static/css/2.e160430c.chunk.css.map": "/zywienie-website/static/css/2.e160430c.chunk.css.map",
-    "static/css/main.1231d423.chunk.css.map": "/zywienie-website/static/css/main.1231d423.chunk.css.map",
+    "static/css/main.5f913099.chunk.css.map": "/zywienie-website/static/css/main.5f913099.chunk.css.map",
     "static/js/2.53546d9a.chunk.js.LICENSE.txt": "/zywienie-website/static/js/2.53546d9a.chunk.js.LICENSE.txt",
     "static/media/clinical.jpg": "/zywienie-website/static/media/clinical.f38b0085.jpg",
     "static/media/computer.jpg": "/zywienie-website/static/media/computer.0898a30a.jpg",
@@ -42,7 +42,7 @@
     "static/js/runtime-main.fccd0dfc.js",
     "static/css/2.e160430c.chunk.css",
     "static/js/2.53546d9a.chunk.js",
-    "static/css/main.1231d423.chunk.css",
-    "static/js/main.b8165635.chunk.js"
+    "static/css/main.5f913099.chunk.css",
+    "static/js/main.189c076f.chunk.js"
   ]
 }
