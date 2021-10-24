@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/zywienie-website/static/css/main.1231d423.chunk.css",
-    "main.js": "/zywienie-website/static/js/main.1ad8aad4.chunk.js",
-    "main.js.map": "/zywienie-website/static/js/main.1ad8aad4.chunk.js.map",
+    "main.js": "/zywienie-website/static/js/main.a0591eae.chunk.js",
+    "main.js.map": "/zywienie-website/static/js/main.a0591eae.chunk.js.map",
     "runtime-main.js": "/zywienie-website/static/js/runtime-main.fccd0dfc.js",
     "runtime-main.js.map": "/zywienie-website/static/js/runtime-main.fccd0dfc.js.map",
     "static/css/2.e160430c.chunk.css": "/zywienie-website/static/css/2.e160430c.chunk.css",
@@ -43,6 +43,6 @@
     "static/css/2.e160430c.chunk.css",
     "static/js/2.53546d9a.chunk.js",
     "static/css/main.1231d423.chunk.css",
-    "static/js/main.1ad8aad4.chunk.js"
+    "static/js/main.a0591eae.chunk.js"
   ]
 }
