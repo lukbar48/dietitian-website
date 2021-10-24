@@ -87,7 +87,7 @@ const NavBar = () => {
           >
             
             <span className={styles.loginText}><IoPersonOutline className={styles.loginIcon} />{user ? 'Wyloguj' : 'Zaloguj'}</span>
-            {user ? (<p className={styles.loginUser}>{user?.email}</p>) : null}
+            {user ? (<p className={styles.loginUser}>{user.email}</p>) : null}
           </NavLink>
           {socials.map((social) => {
             const { id, url, icon } = social;
