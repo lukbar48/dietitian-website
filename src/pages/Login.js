@@ -108,7 +108,7 @@ const Login = () => {
           />
         </label>
         <label htmlFor="password">
-          Hasło *
+          Hasło * (min. 6 znaków)
           <StyledInput
             onChange={(event) => {
               setRegisterPassword(event.target.value);

@@ -41,7 +41,7 @@ function App() {
           <Route path="/regulamin" component={Regulamin} />
           <Route path="/polityka-prywatnosci" component={Polityka} />
           <Route path="/login" component={Login} />
-          <Route path="*" component={Error} />
+          <Route path="*" component={Home} />
         </Switch>
         <Footer />
       </div>

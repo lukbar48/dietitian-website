@@ -41,8 +41,8 @@ const AuthProvider = ({ children }) => {
       console.log(user);
       setMessage('Pomyślnie zalogowano!')
     } catch (error) {
+      setMessage('Nieprawidłowe dane, hasło powinno mieć co najmniej 6 znaków.')
       console.log(error.message);
-      setMessage('Nieprawidłowe dane!')
     }
     setRegisterEmail('')
     setRegisterPassword('')
