@@ -6,10 +6,12 @@ import { IoPersonOutline } from 'react-icons/io5';
 import logo from 'assets/images/zywienienatak.jpg';
 import { links, socials } from 'data/data';
 import { useGlobalContext } from 'contexts/context';
+import { useAuth } from 'contexts/AuthContext';
 import styles from './NavBar.module.scss';
 
 const NavBar = () => {
-  const { amount, login, setLogin } = useGlobalContext();
+  const { user, logout, login } = useAuth();
+  const { amount} = useGlobalContext();
   const [showSidebar, setShowSidebar] = useState(false);
   const linksRef = useRef(null);
   const linksListRef = useRef(null);
@@ -75,16 +77,17 @@ const NavBar = () => {
           </NavLink>
           <NavLink
             onClick={() => {
-              setShowSidebar(!showSidebar)
-              if (login) {
-                setLogin(false)
+              setShowSidebar(!showSidebar);
+              if (user) {
+                logout()
               }
             }}
             className={styles.login}
-            to={login ? '/' : '/login'}
+            to={user ? '/' : '/login'}
           >
-            <IoPersonOutline />
-            <p>{login ? 'Wyloguj' : 'Zaloguj'}</p>
+            
+            <span className={styles.loginText}><IoPersonOutline className={styles.loginIcon} />{user ? 'Wyloguj' : 'Zaloguj'}</span>
+            {user ? (<p className={styles.loginUser}>{user?.email}</p>) : null}
           </NavLink>
           {socials.map((social) => {
             const { id, url, icon } = social;

@@ -1,10 +1,10 @@
+import React, { useState } from 'react';
 import Btn from 'components/Btn';
-import React from 'react';
 import styled, { css } from 'styled-components';
-import TitleHeader from 'components/TitleHeader';
+import { useAuth } from '../contexts/AuthContext';
 
 const sharedStyles = css`
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   height: 35px;
   border-radius: 4px;
   border: 1px solid #ddd;
@@ -12,17 +12,15 @@ const sharedStyles = css`
   padding: 15px 10px;
   box-sizing: border-box;
 `;
-
 const StyledFormWrapper = styled.div`
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   padding: 30px;
   gap: 50px;
-  margin: 120px 0 40px
+  margin: 120px 0 40px;
 `;
-
-const StyledForm = styled.form`
+const StyledForm = styled.div`
   width: 100%;
   max-width: 520px;
   padding: 40px;
@@ -45,51 +43,85 @@ const StyledForm = styled.form`
     margin-bottom: -5px;
   }
 `;
-
-
 const StyledInput = styled.input`
   display: block;
   width: 100%;
   ${sharedStyles}
 `;
 
-
 const Login = () => {
-  
-  const handleSubmit = (e) => {
-    e.preventDefault();
-  };
+  const {
+    login,
+    logout,
+    register,
+    setLoginEmail,
+    setLoginPassword,
+    setRegisterEmail,
+    setRegisterPassword,
+    user,
+    message
+  } = useAuth();
 
   return (
-    <>
-      <StyledFormWrapper>
-        <StyledForm onSubmit={handleSubmit}>
-          <h2>Zaloguj się</h2>
-          <label htmlFor="name">
-            Nazwa użytkownika lub e-mail *
-            <StyledInput type="text" name="name" />
-          </label>
-          <label htmlFor="password">
-            Hasło *
-            <StyledInput type="password" name="password" />
-          </label>
-          <Btn type='submit'>Zaloguj się</Btn>
-        </StyledForm>
+    <StyledFormWrapper>
+      <StyledForm>
+        {user ? (
+          <h3>{message}</h3>
+        ) : (
+          <>
+            <h2>Zaloguj się</h2>
+            <label htmlFor="name">
+              Nazwa użytkownika lub e-mail *
+              <StyledInput
+                onChange={(event) => {
+                  setLoginEmail(event.target.value);
+                }}
+                type="text"
+                name="name"
+              />
+            </label>
+            <label htmlFor="password">
+              Hasło *
+              <StyledInput
+                onChange={(event) => {
+                  setLoginPassword(event.target.value);
+                }}
+                type="password"
+                name="password"
+              />
+            </label>
+            <Btn onClick={login}>Zaloguj się</Btn>
+          </>
+        )}
+      </StyledForm>
 
-        <StyledForm onSubmit={handleSubmit}>
-          <h2>Zarejestruj się</h2>
-          <label htmlFor="name">
-            Adres e-mail *
-            <StyledInput type="e-mail" name="name" />
-          </label>
-          <label htmlFor="password">
-            Hasło *
-            <StyledInput type="password" name="password" />
-          </label>
-          <Btn type='submit' secondary>Zarejestruj się</Btn>
-        </StyledForm>
-      </StyledFormWrapper>
-    </>
+      <StyledForm>
+        <h2>Zarejestruj się</h2>
+        <label htmlFor="name">
+          Adres e-mail *
+          <StyledInput
+            onChange={(event) => {
+              setRegisterEmail(event.target.value);
+            }}
+            type="e-mail"
+            name="name"
+          />
+        </label>
+        <label htmlFor="password">
+          Hasło *
+          <StyledInput
+            onChange={(event) => {
+              setRegisterPassword(event.target.value);
+            }}
+            type="password"
+            name="password"
+          />
+        </label>
+        <Btn onClick={register} secondary>
+          Zarejestruj się
+        </Btn>
+      </StyledForm>
+    </StyledFormWrapper>
   );
 };
 

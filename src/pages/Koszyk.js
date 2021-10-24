@@ -3,10 +3,12 @@ import TitleHeader from 'components/TitleHeader';
 import CartItem from 'components/CartItem';
 import Button from 'components/Button';
 import { useGlobalContext } from 'contexts/context';
+import { useAuth } from 'contexts/AuthContext';
 import styles from './Koszyk.module.scss';
 
 const Koszyk = () => {
-  const { clearCart, total, cart, amount, login } = useGlobalContext();
+  const { clearCart, total, cart, amount } = useGlobalContext();
+  const { user } = useAuth();
   return (
     <>
       <TitleHeader>Koszyk</TitleHeader>
@@ -29,8 +31,8 @@ const Koszyk = () => {
                   <Button onClick={clearCart} button secondary>
                     Wyczyść koszyk
                   </Button>
-                  {login ? (
-                    <Button url="/koszyk/zakup">Przejdź do płatności</Button>
+                  {user ? (
+                    <Button url="/">Przejdź do płatności</Button>
                   ) : (
                     <Button url="/login">Zaloguj się aby dokończyć zakup</Button>
                   )}

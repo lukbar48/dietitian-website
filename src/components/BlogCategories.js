@@ -2,12 +2,12 @@ import React, { useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { AiOutlineSearch } from 'react-icons/ai';
 import { BsPlusLg } from 'react-icons/bs';
-import { useGlobalContext } from 'contexts/context';
+import { useAuth } from 'contexts/AuthContext';
 import styles from './BlogCategories.module.scss';
 
 const BlogCategories = ({ setOpenForm, setBlogsCategory, setSearchTerm }) => {
   const searchValue = useRef();
-  const {login} = useGlobalContext()
+  const { user } = useAuth();
 
   const searchPost = () => {
     setSearchTerm(searchValue.current.value);
@@ -56,7 +56,7 @@ const BlogCategories = ({ setOpenForm, setBlogsCategory, setSearchTerm }) => {
             <AiOutlineSearch />{' '}
           </button>
         </form>
-        {login ? (
+        {user ? (
           <button onClick={() => setOpenForm(true)} className={styles.addBlog} type="button">
             <BsPlusLg />
             <span>Dodaj nowy post</span>

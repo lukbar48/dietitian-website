@@ -18,6 +18,7 @@ import ShowShopItem from 'pages/ShowShopItem';
 import Footer from 'components/Footer';
 import ScrollToTop from 'components/ScrollToTop';
 
+require('dotenv').config()
 
 function App() {
 
